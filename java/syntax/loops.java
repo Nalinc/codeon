@@ -9,19 +9,21 @@ class Ideone
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		int i;
-		for(i=0; i<10; i++)
-		{
-			System.out.println("For-loop "+i);
+		int i,j;
+		for(i=0; i<5; i++)
+		{	
+			j=0;
+			while(j<5)
+			{
+				System.out.print("\t"+i+j);
+				j++;
+			}
+			System.out.println();
 		}
-		
-		while(i>0)
-		{
-			System.out.println("While-loop "+ --i);
-		}
-		
+		j=1;
 		do{
-			System.out.println("Do while-loop "+ i++);			
-		}while(i<10);
+			System.out.print("\t"+j);
+			j++;
+		}while(j<10);
 	}
 }
